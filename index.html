@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Completed Projects Slider</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="project-slider" id="project-slider" tabindex="0">
+    <div class="project-slider__nav" id="project-tabs">
+      <!-- Tabs inserted via JS -->
+    </div>
+
+    <div class="project-slider__content">
+      <div class="project-slider__details">
+        <p class="project-slider__eyebrow">Completed projects</p>
+        <h2 class="project-slider__headline">Only the best apartments for cozy life</h2>
+        <p class="project-slider__description" id="project-description"></p>
+
+        <div class="project-slider__stats">
+          <div class="project-slider__stat">
+            <h3>City:</h3>
+            <p id="project-city"></p>
+          </div>
+          <div class="project-slider__stat">
+            <h3>Apartment area:</h3>
+            <p id="project-area"></p>
+          </div>
+          <div class="project-slider__stat">
+            <h3>Repair time:</h3>
+            <p id="project-repair-time"></p>
+          </div>
+          <div class="project-slider__stat">
+            <h3>Repair cost:</h3>
+            <p id="project-repair-cost"></p>
+          </div>
+        </div>
+
+        <div class="project-slider__controls" aria-label="Project slider controls">
+          <button class="project-slider__arrow" id="prev-slide" aria-label="Previous project"></button>
+          <div class="project-slider__dots" id="project-dots"></div>
+          <button class="project-slider__arrow project-slider__arrow--next" id="next-slide" aria-label="Next project"></button>
+        </div>
+      </div>
+      <div class="project-slider__image-wrapper">
+        <img src="" alt="Project preview" id="project-image" />
+      </div>
+    </div>
+  </section>
+
+  <script src="slider.js"></script>
+</body>
+</html>
